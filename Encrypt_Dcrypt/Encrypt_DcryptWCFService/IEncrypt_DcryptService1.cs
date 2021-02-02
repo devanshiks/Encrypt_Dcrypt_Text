@@ -12,7 +12,10 @@ namespace Encrypt_DcryptWCFService
     public interface IEncrypt_DcryptService1
     {
         [OperationContract]
-        string Encryption(string str, int key1, int key2 );
+        string Encryption(string str);
+
+        [OperationContract]
+        string Decryption(string cipherText);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
