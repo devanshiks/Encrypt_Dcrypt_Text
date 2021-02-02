@@ -12,3 +12,10 @@ F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DcryptWCFService\obj\Debug\Encrypt_DecryptWC
 F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DcryptWCFService\obj\Debug\Encrypt_DecryptWCFService.csproj.CoreCompileInputs.cache
 F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DcryptWCFService\obj\Debug\Encrypt_DcryptWCFService.dll
 F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DcryptWCFService\obj\Debug\Encrypt_DcryptWCFService.pdb
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-3\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\bin\Debug\Encrypt_DcryptWCFService.dll.config
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-3\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\bin\Debug\Encrypt_DcryptWCFService.dll
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-3\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\bin\Debug\Encrypt_DcryptWCFService.pdb
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-3\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\obj\Debug\Encrypt_DecryptWCFService.csprojAssemblyReference.cache
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-3\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\obj\Debug\Encrypt_DecryptWCFService.csproj.CoreCompileInputs.cache
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-3\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\obj\Debug\Encrypt_DcryptWCFService.dll
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-3\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\obj\Debug\Encrypt_DcryptWCFService.pdb

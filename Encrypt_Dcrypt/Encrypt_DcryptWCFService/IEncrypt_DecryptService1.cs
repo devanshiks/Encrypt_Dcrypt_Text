@@ -22,6 +22,14 @@ namespace Encrypt_DecryptWCFService
         bool AddData(TextDetails td);
 
         [OperationContract]
+        [FaultContract(typeof(MyException))]
+        bool DeleteTextDetail(int id);
+
+        [OperationContract]
+        [FaultContract(typeof(MyException))]
+        TextDetails GetData(int id);
+
+        [OperationContract]
         DataSet ShowAllData();
 
         [OperationContract]
@@ -64,6 +72,19 @@ namespace Encrypt_DecryptWCFService
         {
             get { return decryptedtext; }
             set { decryptedtext = value; }
+        }
+    }
+
+    [DataContract]
+    public class MyException
+    {
+        private string strReason = "Some error occured!";
+
+        [DataMember]
+        public string Reason
+        {
+            get { return strReason; }
+            set { strReason = value; }
         }
     }
 

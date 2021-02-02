@@ -117,8 +117,6 @@ namespace Encrypt_DecryptWCFService
 
         public bool AddData(TextDetails td)
         {
-
-
             SqlConnection cnn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Encrypt_DecryptDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cnn;
@@ -138,6 +136,49 @@ namespace Encrypt_DecryptWCFService
             {
                 return false;
             }
+            return true;
+        }
+
+        public TextDetails GetData(int id)
+        {
+            SqlConnection cnn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Encrypt_DecryptDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = cnn;
+            cmd.CommandText = "select * from textDetails where id=@id";
+            SqlParameter p = new SqlParameter("@id", id);
+            cmd.Parameters.Add(p);
+            cnn.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            TextDetails td = new TextDetails();
+            if (reader.Read())
+            {
+                td.ID = reader.GetInt32(0);
+                td.Plaintext = reader.GetString(1);
+                td.Encryptedtext = reader.GetString(2);
+                td.Decryptedtext = reader.GetString(3);
+            }
+            else
+            {
+                MyException m = new MyException();
+                m.Reason = "No record found with given ID";
+                throw new FaultException<MyException>(m);
+            }
+            reader.Close();
+            cnn.Close();
+            return td;
+        }
+
+        public bool DeleteTextDetail(int id)
+        {
+            SqlConnection cnn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Encrypt_DecryptDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = cnn;
+            cmd.CommandText = "delete from textDetails where id=@id";
+            SqlParameter para = new SqlParameter("@id", id);
+            cmd.Parameters.Add(para);
+            cnn.Open();
+            int reader = cmd.ExecuteNonQuery();
+            cnn.Close();
             return true;
         }
     }
