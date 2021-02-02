@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace Encrypt_DcryptWCFService
+namespace Encrypt_DecryptWCFService
 {
+    //Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Encrypt_DecryptDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
+
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
-    public class Encrypt_DcryptService1 : IEncrypt_DcryptService1
+    public class Encrypt_DecryptService1 : IEncrypt_DecryptService1
     {
         static int key1 = 17;
         static int key2 = 20;
@@ -100,6 +104,15 @@ namespace Encrypt_DcryptWCFService
                 composite.StringValue += "Suffix";
             }
             return composite;
+        }
+
+        public DataSet ShowAllData()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("select * from textDetails",
+                @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Encrypt_DecryptDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            DataSet ds = new DataSet();
+            da.Fill(ds,"textDetails");
+            return ds;
         }
     }
 }

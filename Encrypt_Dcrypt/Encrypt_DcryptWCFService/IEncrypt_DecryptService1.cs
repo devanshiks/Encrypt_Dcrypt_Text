@@ -1,21 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace Encrypt_DcryptWCFService
+namespace Encrypt_DecryptWCFService
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
-    public interface IEncrypt_DcryptService1
+    public interface IEncrypt_DecryptService1
     {
         [OperationContract]
         string Encryption(string str);
 
         [OperationContract]
         string Decryption(string cipherText);
+
+        [OperationContract]
+        DataSet ShowAllData();
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);

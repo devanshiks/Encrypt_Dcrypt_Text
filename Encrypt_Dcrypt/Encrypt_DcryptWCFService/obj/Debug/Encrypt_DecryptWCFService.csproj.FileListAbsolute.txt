@@ -1,0 +1,7 @@
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\bin\Debug\Encrypt_DcryptWCFService.dll.config
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\bin\Debug\Encrypt_DcryptWCFService.dll
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\bin\Debug\Encrypt_DcryptWCFService.pdb
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\obj\Debug\Encrypt_DecryptWCFService.csprojAssemblyReference.cache
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\obj\Debug\Encrypt_DecryptWCFService.csproj.CoreCompileInputs.cache
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\obj\Debug\Encrypt_DcryptWCFService.dll
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DcryptWCFService\obj\Debug\Encrypt_DcryptWCFService.pdb
