@@ -27,6 +27,43 @@ namespace Encrypt_DecryptWCFService
         // TODO: Add your service operations here
     }
 
+    [DataContract]
+    public class TextDetails
+    {
+        int id;
+        string plaintext;
+        string encryptedtext;
+        string decryptedtext;
+
+        [DataMember]
+        public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+        [DataMember]
+        public string Plaintext
+        {
+            get { return plaintext; }
+            set { plaintext = value; }
+        }
+
+        [DataMember]
+        public string Encryptedtext
+        {
+            get { return encryptedtext; }
+            set { encryptedtext = value; }
+        }
+
+        [DataMember]
+        public string Decryptedtext
+        {
+            get { return decryptedtext; }
+            set { decryptedtext = value; }
+        }
+    }
+
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
     // You can add XSD files into the project. After building the project, you can directly use the data types defined there, with the namespace "Encrypt_DcryptWCFService.ContractType".
     [DataContract]
