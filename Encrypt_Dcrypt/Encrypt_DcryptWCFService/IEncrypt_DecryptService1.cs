@@ -19,6 +19,9 @@ namespace Encrypt_DecryptWCFService
         string Decryption(string cipherText);
 
         [OperationContract]
+        bool AddData(TextDetails td);
+
+        [OperationContract]
         DataSet ShowAllData();
 
         [OperationContract]

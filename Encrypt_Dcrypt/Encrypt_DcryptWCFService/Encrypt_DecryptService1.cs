@@ -114,5 +114,31 @@ namespace Encrypt_DecryptWCFService
             da.Fill(ds,"textDetails");
             return ds;
         }
+
+        public bool AddData(TextDetails td)
+        {
+
+
+            SqlConnection cnn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Encrypt_DecryptDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = cnn;
+            cmd.CommandText = "insert into textDetails(plaintext,encryptedtext,decryptedtext) values (@plaintext,@encryptedtext,@decryptedtext)";
+            SqlParameter para = new SqlParameter("@plaintext", td.Plaintext);
+            SqlParameter para1 = new SqlParameter("@encryptedtext", td.Encryptedtext);
+            SqlParameter para2 = new SqlParameter("@decryptedtext", td.Decryptedtext);
+
+            cmd.Parameters.Add(para);
+            cmd.Parameters.Add(para1);
+            cmd.Parameters.Add(para2);
+
+            cnn.Open();
+            int reader = cmd.ExecuteNonQuery();
+            cnn.Close();
+            if (reader == 0)
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }
