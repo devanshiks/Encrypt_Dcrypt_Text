@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encrypt_DecryptWCFService",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encrypt_DecryptWCFHost", "..\Encrypt_DecryptWCFHost\Encrypt_DecryptWCFHost.csproj", "{18965215-37C2-4C50-AA7F-F4C1A4389941}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encrypt_DecryptClient", "..\Encrypt_DecryptClient\Encrypt_DecryptClient.csproj", "{36E969F6-6DAC-47B1-A977-050770AAFE17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4E819F78-9E06-4CBE-8C16-7F6A63AD43B4} = {4E819F78-9E06-4CBE-8C16-7F6A63AD43B4}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +26,10 @@ Global
 		{18965215-37C2-4C50-AA7F-F4C1A4389941}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18965215-37C2-4C50-AA7F-F4C1A4389941}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18965215-37C2-4C50-AA7F-F4C1A4389941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E969F6-6DAC-47B1-A977-050770AAFE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E969F6-6DAC-47B1-A977-050770AAFE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E969F6-6DAC-47B1-A977-050770AAFE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E969F6-6DAC-47B1-A977-050770AAFE17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

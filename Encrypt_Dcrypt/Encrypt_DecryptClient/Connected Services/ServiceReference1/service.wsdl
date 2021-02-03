@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Encrypt_DecryptService1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Encrypt_DecryptWCFService" />
+      <xsd:import />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEncrypt_DecryptService1_Encryption_InputMessage">
+    <wsdl:part name="parameters" element="tns:Encryption" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_Encryption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_Decryption_InputMessage">
+    <wsdl:part name="parameters" element="tns:Decryption" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_Decryption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DecryptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_AddData_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddData" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_AddData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_DeleteTextDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTextDetail" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_DeleteTextDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTextDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_DeleteTextDetail_MyExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Encrypt_DecryptWCFService" name="detail" element="q1:MyException" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_GetData_MyExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Encrypt_DecryptWCFService" name="detail" element="q2:MyException" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_UpdateTextDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTextDetail" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_UpdateTextDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTextDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_UpdateTextDetail_MyExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Encrypt_DecryptWCFService" name="detail" element="q3:MyException" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_ShowAllData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShowAllData" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_ShowAllData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShowAllDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IEncrypt_DecryptService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEncrypt_DecryptService1">
+    <wsdl:operation name="Encryption">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/Encryption" message="tns:IEncrypt_DecryptService1_Encryption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/EncryptionResponse" message="tns:IEncrypt_DecryptService1_Encryption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Decryption">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/Decryption" message="tns:IEncrypt_DecryptService1_Decryption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/DecryptionResponse" message="tns:IEncrypt_DecryptService1_Decryption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/AddData" message="tns:IEncrypt_DecryptService1_AddData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/AddDataResponse" message="tns:IEncrypt_DecryptService1_AddData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTextDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/DeleteTextDetail" message="tns:IEncrypt_DecryptService1_DeleteTextDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/DeleteTextDetailResponse" message="tns:IEncrypt_DecryptService1_DeleteTextDetail_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/DeleteTextDetailMyExceptionFault" name="MyExceptionFault" message="tns:IEncrypt_DecryptService1_DeleteTextDetail_MyExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/GetData" message="tns:IEncrypt_DecryptService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/GetDataResponse" message="tns:IEncrypt_DecryptService1_GetData_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/GetDataMyExceptionFault" name="MyExceptionFault" message="tns:IEncrypt_DecryptService1_GetData_MyExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTextDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/UpdateTextDetail" message="tns:IEncrypt_DecryptService1_UpdateTextDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/UpdateTextDetailResponse" message="tns:IEncrypt_DecryptService1_UpdateTextDetail_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/UpdateTextDetailMyExceptionFault" name="MyExceptionFault" message="tns:IEncrypt_DecryptService1_UpdateTextDetail_MyExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowAllData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/ShowAllData" message="tns:IEncrypt_DecryptService1_ShowAllData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/ShowAllDataResponse" message="tns:IEncrypt_DecryptService1_ShowAllData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/GetDataUsingDataContract" message="tns:IEncrypt_DecryptService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncrypt_DecryptService1/GetDataUsingDataContractResponse" message="tns:IEncrypt_DecryptService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IEncrypt_DecryptService1" type="tns:IEncrypt_DecryptService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Encryption">
+      <soap:operation soapAction="http://tempuri.org/IEncrypt_DecryptService1/Encryption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Decryption">
+      <soap:operation soapAction="http://tempuri.org/IEncrypt_DecryptService1/Decryption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddData">
+      <soap:operation soapAction="http://tempuri.org/IEncrypt_DecryptService1/AddData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTextDetail">
+      <soap:operation soapAction="http://tempuri.org/IEncrypt_DecryptService1/DeleteTextDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="MyExceptionFault">
+        <soap:fault use="literal" name="MyExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IEncrypt_DecryptService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="MyExceptionFault">
+        <soap:fault use="literal" name="MyExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTextDetail">
+      <soap:operation soapAction="http://tempuri.org/IEncrypt_DecryptService1/UpdateTextDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="MyExceptionFault">
+        <soap:fault use="literal" name="MyExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ShowAllData">
+      <soap:operation soapAction="http://tempuri.org/IEncrypt_DecryptService1/ShowAllData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IEncrypt_DecryptService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Encrypt_DecryptService1">
+    <wsdl:port name="BasicHttpBinding_IEncrypt_DecryptService1" binding="tns:BasicHttpBinding_IEncrypt_DecryptService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Encrypt_DecryptWCFService/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
