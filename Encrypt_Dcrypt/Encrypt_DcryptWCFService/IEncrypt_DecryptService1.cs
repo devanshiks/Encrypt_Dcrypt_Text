@@ -30,6 +30,10 @@ namespace Encrypt_DecryptWCFService
         TextDetails GetData(int id);
 
         [OperationContract]
+        [FaultContract(typeof(MyException))]
+        TextDetails UpdateTextDetail(TextDetails td);
+
+        [OperationContract]
         DataSet ShowAllData();
 
         [OperationContract]

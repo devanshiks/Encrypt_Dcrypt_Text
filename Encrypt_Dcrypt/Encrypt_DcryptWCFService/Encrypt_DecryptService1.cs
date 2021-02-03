@@ -168,6 +168,8 @@ namespace Encrypt_DecryptWCFService
             return td;
         }
 
+
+
         public bool DeleteTextDetail(int id)
         {
             SqlConnection cnn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Encrypt_DecryptDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
@@ -179,7 +181,42 @@ namespace Encrypt_DecryptWCFService
             cnn.Open();
             int reader = cmd.ExecuteNonQuery();
             cnn.Close();
+            if (reader == 0)
+            {
+                MyException m = new MyException();
+                m.Reason = "No record found with given ID";
+                throw new FaultException<MyException>(m);
+            }
             return true;
+        }
+
+        public TextDetails UpdateTextDetail(TextDetails td)
+        {
+            SqlConnection cnn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Encrypt_DecryptDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = cnn;
+            cmd.CommandText = "update textDetails set plaintext=@plaintext,encryptedtext=@encryptedtext,decryptedtext=@decryptedtext where id=@id";
+
+            SqlParameter para = new SqlParameter("@id", td.ID);
+            SqlParameter para1 = new SqlParameter("@plaintext", td.Plaintext);
+            SqlParameter para2 = new SqlParameter("@encryptedtext", td.Encryptedtext);
+            SqlParameter para3 = new SqlParameter("@decryptedtext", td.Decryptedtext);
+
+            cmd.Parameters.Add(para);
+            cmd.Parameters.Add(para1);
+            cmd.Parameters.Add(para2);
+            cmd.Parameters.Add(para3);
+
+            cnn.Open();
+            int reader = cmd.ExecuteNonQuery();
+            cnn.Close();
+            if (reader == 0)
+            {
+                MyException m = new MyException();
+                m.Reason = "error! try again for updation";
+                throw new FaultException<MyException>(m);
+            }
+            return td;
         }
     }
 }
