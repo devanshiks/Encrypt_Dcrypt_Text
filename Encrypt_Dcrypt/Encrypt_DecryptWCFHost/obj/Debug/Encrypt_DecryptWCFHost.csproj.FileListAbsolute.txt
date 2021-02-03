@@ -1,0 +1,33 @@
+F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DecryptWCFHost.exe.config
+F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DecryptWCFHost.exe
+F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DecryptWCFHost.pdb
+F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DcryptWCFService.dll
+F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DcryptWCFService.pdb
+F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DcryptWCFService.dll.config
+F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.csprojAssemblyReference.cache
+F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.csproj.CoreCompileInputs.cache
+F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.csproj.CopyComplete
+F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.exe
+F:\Sem 6\SOC\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.pdb
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DecryptWCFHost.exe.config
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DecryptWCFHost.exe
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DecryptWCFHost.pdb
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DcryptWCFService.dll
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DcryptWCFService.pdb
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DcryptWCFService.dll.config
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.csprojAssemblyReference.cache
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.csproj.CoreCompileInputs.cache
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.csproj.CopyComplete
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.exe
+E:\SEM-6\SOC\project\github\Encrypt_Dcrypt_Text\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.pdb
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-6\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DecryptWCFHost.exe.config
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-6\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DecryptWCFHost.exe
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-6\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DecryptWCFHost.pdb
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-6\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DcryptWCFService.dll
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-6\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DcryptWCFService.pdb
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-6\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\bin\Debug\Encrypt_DcryptWCFService.dll.config
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-6\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.csprojAssemblyReference.cache
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-6\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.csproj.CoreCompileInputs.cache
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-6\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.csproj.CopyComplete
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-6\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.exe
+D:\d drive\MY PROFILE\Projects\WCF service C#\Encrypter Decrypter\Mark-6\Encrypt_Dcrypt\Encrypt_DecryptWCFHost\obj\Debug\Encrypt_DecryptWCFHost.pdb
