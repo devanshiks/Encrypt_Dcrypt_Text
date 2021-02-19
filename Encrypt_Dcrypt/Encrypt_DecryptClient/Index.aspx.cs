@@ -41,5 +41,10 @@ namespace Encrypt_DecryptClient
             sc.AddData(td);
             Label6.Text = "Details Added Successfully!!!!";
         }
+
+        protected void ShowAll_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ShowAll.aspx");
+        }
     }
 }
