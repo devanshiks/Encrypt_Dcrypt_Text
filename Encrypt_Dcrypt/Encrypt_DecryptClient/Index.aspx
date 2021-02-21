@@ -49,12 +49,13 @@
       <div class="container">
    
     <form id="form1" runat="server">
-        <div class="card py-4" style="background:linear-gradient(90deg, rgb(51, 255, 51,0.7) 25%, rgb(128, 223, 255) 100%);width: 70%;border:3px solid #0F7382;
-border-radius: 19px; border-radius: 40px;margin-top:200px; ">
+        <h1 style="width: 70%;margin-top:130px;background-image: linear-gradient(to bottom, #00a6ff, #00e7f7);">Welcome to Encryption Service!</h1>
+        <div class="card py-1" style="background:linear-gradient(90deg, rgb(51, 255, 51,0.7) 25%, rgb(128, 223, 255) 100%);width: 70%;border:3px solid #0F7382;
+border-radius: 19px; border-radius: 40px;margin-top:50px; ">
          <div class="card-body">
           
            <div class="row py-2">
-                    <div class="col ">
+                    <div class="col">
             <asp:Label ID="Label1" runat="server" Text="Plain Text:"></asp:Label>
                     </div>
                <div class="col">

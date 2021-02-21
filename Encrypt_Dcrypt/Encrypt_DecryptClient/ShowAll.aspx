@@ -8,6 +8,8 @@
     <style>
         body{
              background:linear-gradient(90deg, rgb(51, 255, 51,0.5) 29%, rgb(128, 223, 255,0.8) 100%);
+             font-family:cursive;
+            font-size:20px;
         }
         #GridView1 {
             margin-top: 10vh;
@@ -29,7 +31,7 @@
         <asp:Button ID="Button1" runat="server" Text="Back" OnClick="Back_Click" Height="30px" Width="100px" />
         </div>
         <div style="margin-top:10px; margin-left:85vh;">
-        <asp:Label ID="Label1" runat="server" Text="" ForeColor="black" Font-Size="Larger"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="" ForeColor="Green" Font-Bold="True"></asp:Label>
         </div>
         <div>
             <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" 
